@@ -300,6 +300,145 @@ nav {
 }
 
 
+/* ===== Responsive Design ===== */
+
+/* Smartphones (bis 768px Breite) */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+
+  .right {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .section1 {
+    flex-direction: column;
+    padding-top: 50px;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .introduction {
+    width: 90%;
+    padding: 0;
+    font-size: 18px;
+  }
+
+  .introduction h1 {
+    font-size: 36px;
+  }
+
+  .pic-box img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .section2 {
+    padding-top: 100px;
+  }
+
+  .section2 h2 {
+    font-size: 36px;
+  }
+
+  .section2 p {
+    width: 90%;
+    font-size: 18px;
+  }
+
+  .sprachen {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sprachen div {
+    width: 140px;
+  }
+
+  .h22 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .about-group {
+    flex-direction: column;
+    gap: 30px;
+    width: 90%;
+  }
+
+  .about-text {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .section4 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .div-group {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .div-group .projekt1,
+  .div-group .projekt2,
+  .div-group .projekt3 {
+    width: 80%;
+    height: auto;
+    border-radius: 15px;
+    padding: 20px;
+  }
+}
+
+/* Tablets (768px – 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .introduction {
+    width: 80%;
+    padding: 0 50px;
+  }
+
+  .pic-box img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .sprachen {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sprachen div {
+    width: 160px;
+  }
+
+  .div-group {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .div-group .projekt1,
+  .div-group .projekt2,
+  .div-group .projekt3 {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+
+
+
+
+
+
+
 
 
 
