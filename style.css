@@ -1,0 +1,308 @@
+:root {
+  --text-color: #151619;
+  --background-color: #e1e1e1;
+  --hover-color:#8ecdcb;
+  --font:"Lexend", sans-serif;
+  --font2: "Nunito",sans-serif;
+}
+html{
+   scroll-behavior: smooth;
+}
+
+body{
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+/*NAVIGATION BAR*/
+nav {
+  width: 100%;
+  background-color: var(--background-color);
+  box-shadow: 0 2px 10px rgb(173, 173, 173);
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto; /* zentriert */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+/* ---- Linke Seite ---- */
+.left a {
+  font-family: var(--font);
+  font-weight: 600;
+  font-size: 23px;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+/* ---- Rechte Seite ---- */
+.right {
+  display: flex;
+  gap: 25px; /* gleichmäßiger Abstand */
+  font-family: var(--font);
+  font-size: 17px;
+}
+
+.right a {
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 5px 12px;
+  transition: all 0.2s ease;
+}
+
+.right a:hover {
+  color: var(--hover-color);
+}
+
+.right a.Email {
+  color: var(--background-color);
+  background-color: var(--text-color);
+  border-radius: 7px;
+  transition: all 0.2s ease;
+}
+
+.right a.Email:hover {
+  background-color: var(--hover-color);
+  color: #fff;
+}
+
+/* MAIN */
+.section1{
+  display: flex;
+  align-items: center;
+  padding-top: 90px;
+  gap: 100px;
+  justify-content: center;
+} 
+
+.introduction{
+  font-family: var(--font2);
+  font-weight: 600;
+  font-size: 20px;
+  width: 900px;
+  padding-left: 300px;
+}
+
+.introduction h1{
+  font-family: var(--font);
+  font-weight: 600;
+  font-size: 50px;
+}
+
+.pic-box img{
+  width: 350px;
+  height: 350px;
+  border-radius: 100%;
+  box-shadow: 3px 3px 40px 2px #696565;
+}
+
+.anchor a{
+  font-family:var(--font);
+  font-weight: 50;
+  font-size: 16px; 
+  border: 2px solid rgb(61, 126, 231);
+  border-radius:10px;
+  text-decoration: none; 
+  color: rgb(61, 126, 231);
+  padding: 7px;
+  margin-right: 15px;
+}
+
+.anchor a:hover{
+  color: #151619;
+  border: 2px solid #151619;
+  
+}
+
+/* SECTION 2*/
+
+.section2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 200px;
+}
+
+.section2 h2{
+  margin:5px;
+  font-family:var(--font);
+  font-size: 50px;
+}
+
+.section2 p{
+  text-align: center;
+  margin:5px;
+  font-family:var(--font2);
+  font-size: 20px;
+  width: 1000px;
+  font-weight: 500;
+}
+
+.sprachen{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.sprachen img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  display: block;
+}
+
+.sprachen div{
+  font-family: var(--font2);
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 200px;
+  padding: 10px 20px;
+  margin: 10px;
+  border: 1.5px solid #000000;
+  box-shadow: 3px 3px 40px 2px #aeadad;
+  border-radius: 5px;
+  line-height: 1;
+}
+
+.sprachen .java:hover {
+  box-shadow: 0 0 20px 1px #2267fa35;
+}
+
+.sprachen .python:hover {
+  box-shadow: 0 0 20px 1px #d6fa2235;
+}
+
+.sprachen .html:hover {
+  box-shadow: 0 0 20px 1px #ff840039;
+}
+
+.sprachen .css:hover {
+  box-shadow: 0 0 20px 1px #0015fe35;
+}
+
+.sprachen .javascript:hover {
+  box-shadow: 0 0 20px 1px #e5ff0035;
+}
+
+.sprachen span {
+  display: inline-block;
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+/*SECTION 3*/
+
+.h22{
+  display: flex;
+  margin-top: 150px;
+  
+  font-family: var(--font);
+  font-size: 40px;
+  justify-content:center;
+}
+
+.section3{
+  display: flex;
+  justify-content: center;
+}
+
+.about-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 80px;
+}
+
+.about-pic img {
+  height: 250px;
+  border-radius: 50%;
+  box-shadow: 3px 3px 40px 2px #696565;
+}
+
+.about-text {
+  font-family: var(--font2);
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px;
+  width: 850px;
+}
+
+/*SECTION 4*/
+
+.section4-header p{
+  font-family: var(--font);
+  font-size: 50px;
+}
+
+.section4{
+  margin-top: 200px;
+  margin-bottom: 200px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.div-group{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 100px;
+}
+
+.div-group .projekt1,
+.div-group .projekt2,
+.div-group .projekt3 {
+  height: 400px;
+  width: 400px;
+  background-color: #ffffff;
+  border-radius: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: box-shadow 0.2s ease-in-out 0.005s;
+  font-family: var(--font);
+}
+
+
+.div-group .projekt1:hover,
+.div-group .projekt2:hover,
+.div-group .projekt3:hover {
+  box-shadow: 0 15px 20px 15px #a2a0a0; 
+}
+
+.div-group .projekt1 p,
+.div-group .projekt2 p,
+.div-group .projekt3 p {
+  margin: 5px 0;
+  font-size: 18px;
+  background: none; 
+  height: auto;
+  width: auto;
+}
+
+.div-group .projekt1 .red,
+.div-group .projekt2 .red,
+.div-group .projekt3 .red{
+  color: #ff0000;
+}
+
+
+
+
+
+
+
+
